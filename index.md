@@ -9,9 +9,9 @@ Below me a horizontal line is going to be placed.
 > Formatting is cool!
 * The first reason why formatting is cool is because it makes things more legible.
 * The second reason is because I said so.
-...
+```
 // this is sample code in Java
 Class example {
   System.out.println("Hello World!");
 }
-...
+```
