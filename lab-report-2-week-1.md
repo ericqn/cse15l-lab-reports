@@ -1,3 +1,4 @@
+__Week 2 Lab Report Blog__
 
 __Installing VS Code__
 
@@ -29,8 +30,25 @@ I copied some code from the lab and put it into a file named WhereAmI.java, whic
 
 __Setting an SSH Key__
 
-Was not able to do this since I had to use a TA account. I tried to log into my account multiple times across the day after the lab, but was unable to do so. I reset multiple passwords and waited god knows how long for no results.
+To do this, I used the ssh-keygen command to create a pair of files that will act as my password: id_rsa and id_rsa.pub. 
+
+![Image](lab2-screenshot5_1.png)
+
+After creating the key files, I logged onto the remote server using the ssh command made a directory called ".ssh". Once created, I could log out. A password was still needed in this step.
+
+![Image](lab2-screenshot5_2.png)
+
+Creating the .ssh directory on the remote server now allows me to transfer over the files from the client to the remote. I used the scp command to transfer over the public passkey file (id_rsa.pub) to the respective directories. A password was still needed in this step.
+
+![Image](lab2-screenshot5_3.png)
+
+Once the files were transferred, I was able to use the ssh command without having to use a passcode.
+
+![Image](lab2-screenshot5_4.png)
+
 
 __Optimizing Remote Running__
 
-This step built off the last step; thus, I was not able to complete this step.
+I tested out running a single command (ls) on the remote server from the client. I found out that as long as there are no spaces in the command as a whole, you don't need quotation marks. To run multiple command on the remote server from the client, I needed to embrace the entire set of commands within quotation marks as to not confuse the terminal. I entered my EricNguyen directory and ran my WhereAmI.java file using this method.
+
+![Image](lab2-screenshot5_4.png)
