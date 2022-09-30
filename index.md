@@ -1,6 +1,6 @@
 # This is a file.
 
-[Lab Report 1](https://ericqn.github.io/cse15l-lab-reports/lab-report-1-week-0.html)
+[Lab Report 1](https://ericqn.github.io/cse15l-lab-reports/lab-report-2-week-1.html)
 
 I am going to write _some words in italics_ and __some other words in bold__.
 Below me a horizontal line is going to be placed.
