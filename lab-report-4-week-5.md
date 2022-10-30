@@ -2,6 +2,8 @@ __Week 5 Lab Report Blog - File Manipulation__
 
 We are going to examine the command "grep"
 
+---
+
 __grep -o__
 One alternate version of grep that we can use is grep -o, which will only display the matched parts of a matching line.
 
@@ -56,7 +58,7 @@ ericnguyen@Erics-MacBook-Pro-3 docsearch-fork % bash grep-o.sh government/Alcoho
 ```
 This command counts how many times the phrase "this is a" appears in the files within the subdirectory Alcohol_Problems. It seems to have appeared 3/3 = 1 time.
 
-
+---
 
 __grep -v__
 grep -v will return the lines within a directory/file that do not contain the phrase given in the argument.
@@ -112,7 +114,7 @@ ericnguyen@Erics-MacBook-Pro-3 docsearch-fork % bash grep-v.sh government/Alcoho
 ```
 This command shows how many lines in the files in the Alcohol_Problems subdirectory don't contain the word "problem": 3955.
 
-
+---
 
 __grep -i__
 This command line version of grep ignores whether or not the argument or line searched for is lowercase or uppercase. This allows a higher degree of search.
