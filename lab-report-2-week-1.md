@@ -1,4 +1,4 @@
-__Week 2 Lab Report Blog__
+__Week 2 Lab Report Blog - Connecting to the Remote Server__
 
 __Installing VS Code__
 

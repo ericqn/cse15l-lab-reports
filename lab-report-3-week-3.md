@@ -1,4 +1,4 @@
-__Week 2 Lab Report Blog__
+__Week 3 Lab Report Blog - Building a Server and Search Engine__
 
 __Part 1__
 
