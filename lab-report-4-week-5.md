@@ -62,7 +62,7 @@ __grep -v__
 grep -v will return the lines within a directory/file that do not contain the phrase given in the argument.
 
 __Example 4:__
-__Updated file grep-i.sh:__
+__Updated file grep-v.sh:__
 ```
 set -e
 
@@ -79,24 +79,24 @@ ericnguyen@Erics-MacBook-Pro-3 docsearch-fork % bash grep-v.sh biomed
 This command shows that 487426 lines in all of the files in the biomed directory do not contain the word/subphrase "bio".
 
 __Example 5:__
-__Updated file grep-i.sh:__
+__The file grep-v.sh:__
 ```
 set -e
 
-grep -i "biology is" technical/$1/* > notThese.txt
+grep -v "biology is" technical/$1/* > notThese.txt
 
 wc notThese.txt
 ```
 
 __Command line input and output:__
 ```
-ericnguyen@Erics-MacBook-Pro-3 docsearch-fork % bash grep-i.sh plos
+ericnguyen@Erics-MacBook-Pro-3 docsearch-fork % bash grep-v.sh plos
       10     141    1320 notThese.txt
 ```
 This command shows that 10 lines in all of the files in the plos directory do not contain the phrase "biology is."
 
 __Example 6:__
-__The file grep-i.sh:__
+__Updated file grep-i.sh:__
 ```
 set -e
 
@@ -114,4 +114,56 @@ This command shows how many lines in the files in the Alcohol_Problems subdirect
 
 
 
-__grep a__
+__grep -i__
+This command line version of grep ignores whether or not the argument or line searched for is lowercase or uppercase. This allows a higher degree of search.
+
+__Example 7:__
+__The file grep-i.sh:__
+```
+set -e
+
+grep -i "YOI" technical/$1/* > upperlower.txt
+
+wc upperlower.txt
+```
+
+__Command line input and output:__
+```
+ericnguyen@Erics-MacBook-Pro-3 docsearch-fork % bash grep-i.sh biomed
+      15     126    1542 upperlower.txt
+```
+We look through the directory biomed for the subphrase "yoi", where the case of the character does not matter. This returns 15 lines throughout all of the files in the biomed directory.
+
+__Example 8:__
+__Updated file grep-i.sh:__
+```
+set -e
+
+grep -i "fOUr" technical/$1/* > upperlower.txt
+
+wc upperlower.txt
+```
+
+__Command line input and output:__
+```
+ericnguyen@Erics-MacBook-Pro-3 docsearch-fork % bash grep-i.sh plos
+      52     742    6454 upperlower.txt
+```
+We look through the directory plos for the word "fOUr", where the case of the character does not matter. Doing this without the case-insensitive command would most likely return zero files.
+
+__Example 9:__
+__Updated file grep-i.sh:__
+```
+set -e
+
+grep -i "ripper" technical/$1/* > upperlower.txt
+
+wc upperlower.txt
+```
+
+__Command line input and output:__
+```
+ericnguyen@Erics-MacBook-Pro-3 docsearch-fork % bash grep-i.sh biomed
+       2      21     204 upperlower.txt
+```
+We look through the directory biomed for the word "ripper", where the search is case-insensitive. Surprisingly, I find 2 lines with this word or string of characters.
