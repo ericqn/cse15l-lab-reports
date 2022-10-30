@@ -4,6 +4,8 @@
 
 [Lab Report 2](https://ericqn.github.io/cse15l-lab-reports/lab-report-3-week-3.html)
 
+[Lab Report 3](https://ericqn.github.io/cse15l-lab-reports/lab-report-4-week-5.html)
+
 I am going to write _some words in italics_ and __some other words in bold__.
 Below me a horizontal line is going to be placed.
 
