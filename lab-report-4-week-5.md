@@ -5,7 +5,7 @@ We are going to examine the command "grep"
 ---
 
 __grep -o__
-One alternate version of grep that we can use is grep -o, which will only display the matched parts of a matching line.
+One alternate version of grep that we can use is grep -o, which will only display the matched parts of a matching line. This version of grep could potentially be helpful in finding how many words match the inputted word argument without having to print the entire line.
 
 __Example 1:__
 __The file grep-o.sh:__
@@ -61,7 +61,7 @@ This command counts how many times the phrase "this is a" appears in the files w
 ---
 
 __grep -v__
-grep -v will return the lines within a directory/file that do not contain the phrase given in the argument.
+grep -v will return the lines within a directory/file that do not contain the phrase given in the argument. Grep -v can be used as the opposite of the regular grep statement. IF we want to exclude any phrases or words in a specific document, we can use grep -v.
 
 __Example 4:__
 __Updated file grep-v.sh:__
@@ -117,7 +117,7 @@ This command shows how many lines in the files in the Alcohol_Problems subdirect
 ---
 
 __grep -i__
-This command line version of grep ignores whether or not the argument or line searched for is lowercase or uppercase. This allows a higher degree of search.
+This command line version of grep ignores whether or not the argument or line searched for is lowercase or uppercase. This allows a higher degree of search. Sometimes, we want case-specific words, and other times, we just want to find a general word or locate the word if we forgot which cases are upper and lower in the word. Grep -i can be used for this.
 
 __Example 7:__
 __The file grep-i.sh:__
