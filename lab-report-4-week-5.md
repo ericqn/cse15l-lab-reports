@@ -1,4 +1,4 @@
-__Week 5 Lab Report Blog - File Manipulation__
+## Week 5 Lab Report Blog - File Manipulation
 
 We are going to examine the command "grep"
 
